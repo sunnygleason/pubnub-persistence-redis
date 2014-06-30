@@ -87,7 +87,7 @@ got from #redisrepl: {"type":"command","uuid":"1ba99878-b391-404d-afc2-8e2124bb2
 # Running the code: Starting a replication proxy
 
 ```
-$ node lib/pubnub-redis-listen-simple.js redisrepl localhost:6399
+$ node lib/pubnub-redis-listen-proxy.js redisrepl localhost:6399
 ```
 
 This starts a listener on the given pubnub channel that proxies data
