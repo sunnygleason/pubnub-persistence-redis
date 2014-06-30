@@ -21,7 +21,7 @@ bugs out. Thanks so much for checking it out!
 
 Redis replication consists of 2 phases:
 
-* Phase 1: the slave connects to the master and gets a dump of all entities as an RDB file
+* Phase 1: the slave connects to the master and gets a dump of all entities as an RDB stream
 * Phase 2: the slave starts receiving updates in real-time
 
 The current Redis replicator can read RDB files from Redis
