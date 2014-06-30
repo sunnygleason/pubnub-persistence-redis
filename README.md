@@ -11,11 +11,23 @@ bugs out. Thanks so much for checking it out!
 # Before you begin
 
 * IMPORTANT! Make sure that you register for a new PubNub account, and use your own subscription key for any of these samples.
+* Note that RDB-based replication only works with RDB file format 2.4 (hopefully 2.6+ coming soon! in the meantime, updates work)
 * Note that all dependencies should be included in the "deps" folder - let us know if we missed one!
 * If you need to know the revision or source of a dependency, check the GIT_REV or .git_config files in that directory respectively
-* Note that RDB-based replication only works with RDB file format 2.4 (hopefully 2.6+ coming soon! in the meantime, updates work)
 * Note that this proof-of-concept currently only supports a small subset of Redis write commands
 * Note that this has not been scale tested! It is merely nifty and awesome...
+
+# Understanding the 2 Phases of Redis Slave Replication
+
+Redis replication consists of 2 phases:
+
+* Phase 1: the slave connects to the master and gets a dump of all entities as an RDB file
+* Phase 2: the slave starts receiving updates in real-time
+
+The current Redis replicator can read RDB files from Redis
+2.4 and earlier. We're investigating adding support for 2.6+
+soon! Even if Phase 1 isn't working for you, it is very likely
+that Phase 2 will work for receiving real-time updates.
 
 # Running the code: Starting a Redis Replicator
 
