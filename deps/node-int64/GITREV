@@ -1,0 +1,9 @@
+commit 94080ee34fd57e3b56ca0bf232e5b0e98ce419eb
+Merge: 7ee6f82 ffad259
+Author: Robert Kieffer <robert@broofa.com>
+Date:   Tue Feb 18 03:34:20 2014 -0800
+
+    Merge pull request #7 from yorickvP/master
+    
+    fix toNumber on Int64s with offset != 0
+

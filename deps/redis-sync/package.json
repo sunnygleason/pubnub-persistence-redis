@@ -1,0 +1,40 @@
+{
+  "name": "redis-sync",
+  "version": "0.1.4",
+  "keywords": ["redis", "slave", "replication", "sync"],
+  "homepage": "https://github.com/pconstr/redis-sync",
+  "description": "redis replication slave",
+  "main": "redis-sync.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pconstr/redis-sync"
+  },
+  "engines": {
+    "node": ">=0.4.0 <0.9.0"
+  },
+  "author": "Carlos Guerreiro <carlos@perceptiveconstructs.com (http://perceptiveconstructs.com)",
+  "dependencies": {"rdb-parser": "0.1.5", "bufferjs": "1.1.0"},
+  "devDependencies": {"rawhash": "0.1.6"},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs" : { "url" : "https://github.com/pconstr/redis-sync/issues" },
+  "contributors": [
+    {
+      "name": "Carlos Guerreiro",
+      "email": "carlos@perceptiveconstructs.com",
+      "web": "http://perceptiveconstructs.com"
+    },
+    {
+      "name": "Carlos Guerreiro",
+      "email": "cguerreiro@igalia.com",
+      "web": "http://igalia.com"
+    }
+  ],
+  "scripts": {
+    "test": "./tests/redisTest"
+  }
+}

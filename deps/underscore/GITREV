@@ -1,0 +1,9 @@
+commit 834c80e6a3c2c84ee3902333001d13c5b4d44144
+Merge: 48fa9d1 13fbeb9
+Author: Michael Ficarra <github@michael.ficarra.me>
+Date:   Sat Jun 28 09:12:35 2014 -0700
+
+    Merge pull request #1710 from megawac/quick-check
+    
+    Apply boiler to some and every; simplify each
+

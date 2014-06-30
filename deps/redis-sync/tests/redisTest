@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# kill any leftover redis server
+killall redis-server >/dev/null 2>&1
+sleep 1
+rm -f dump.rdb
+
+# start redis server
+redis-server >./tests/redis.out&
+
+sleep 3
+
+# fill in with data
+redis-cli -x <./tests/stringCommands.txt >/dev/null
+redis-cli -x <./tests/hashCommands.txt >/dev/null
+redis-cli -x <./tests/listCommands.txt >/dev/null
+redis-cli -x <./tests/setCommands.txt >/dev/null
+redis-cli -x <./tests/zsetCommands.txt >/dev/null
+redis-cli -x <./tests/keyCommands.txt >/dev/null
+
+# run test
+./tests/test.js
+
+killall redis-server

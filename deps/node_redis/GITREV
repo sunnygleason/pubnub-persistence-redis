@@ -1,0 +1,18 @@
+commit c68b3f7bd38b3814a13519211dfbd1084099a6f0
+Author: Bryce Baril <bryce@ravenwall.com>
+Date:   Thu May 22 08:57:20 2014 -0700
+
+    0.10.3
+
+diff --git a/package.json b/package.json
+index 0060783..1e408a2 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "redis",
+-  "version": "0.10.2",
++  "version": "0.10.3",
+   "description": "Redis client library",
+   "keywords": [
+     "redis",

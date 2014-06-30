@@ -1,0 +1,18 @@
+commit 7babc7006731d76632ca5d8b983719cd2c1c4c72
+Author: Geremy Cohen <gcohen@pubnub.com>
+Date:   Wed Jun 25 12:53:05 2014 -0700
+
+    Update CHANGELOG
+
+diff --git a/CHANGELOG b/CHANGELOG
+index 56326e4..c81f152 100644
+--- a/CHANGELOG
++++ b/CHANGELOG
+@@ -1,3 +1,7 @@
++6-25-14 * 3.6.6 * 6f788e
++. Moving restore setting back to initializer from subscriber
++. Fixed stack overflow issue on IE 11
++
+ 6-16-14 * 3.6.5 * c9f52629bd06d4259f0e33617a9c988be033849f
+ . fix for subscribing to presence only channel
+ . fix for jsonp heartbeat

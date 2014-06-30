@@ -1,0 +1,18 @@
+commit 251b63d8ba4e73459bd1bc11979bc1d73e138d9d
+Author: Carlos Guerreiro <cguerreiro@igalia.com>
+Date:   Thu Jul 26 18:35:07 2012 +0300
+
+    bump up version for release
+
+diff --git a/package.json b/package.json
+index a986fa0..f8f1c18 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "rdb-parser",
+-  "version": "0.1.4",
++  "version": "0.1.5",
+   "keywords": ["redis", "rdb", "db", "parser", "streaming"],
+   "homepage": "http://perceptiveconstructs.com",
+   "description": "async streaming parser for redis RDB dumps",

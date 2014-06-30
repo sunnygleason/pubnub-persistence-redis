@@ -1,0 +1,17 @@
+commit 970474b18e657a11f264400a48818b01251c6373
+Author: Carlos Guerreiro <cguerreiro@igalia.com>
+Date:   Fri Sep 14 17:39:29 2012 +0300
+
+    try installing redis from apt on travis-ci
+
+diff --git a/.travis.yml b/.travis.yml
+index 5f7fc86..c5afd0f 100644
+--- a/.travis.yml
++++ b/.travis.yml
+@@ -4,5 +4,5 @@ node_js:
+   - 0.8
+ before_install:
+   - sudo apt-get update
+-  - sudo apt-get install libsparsehash-dev
++  - sudo apt-get install libsparsehash-dev redis-server
+   - sudo cp libsparsehash.pc /usr/lib/pkgconfig/

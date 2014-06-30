@@ -1,0 +1,41 @@
+{
+  "name": "rdb-parser",
+  "version": "0.1.5",
+  "keywords": ["redis", "rdb", "db", "parser", "streaming"],
+  "homepage": "http://perceptiveconstructs.com",
+  "description": "async streaming parser for redis RDB dumps",
+  "main": "rdb-parser.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pconstr/rdb-parser"
+  },
+  "engines": {
+    "node": ">=0.6.0 <0.9.0"
+  },
+  "author": "Carlos Guerreiro <carlos@perceptiveconstructs.com (http://perceptiveconstructs.com)",
+  "dependencies": {"node-int64": "0.3.0", "lzf": "0.1.2", "bufferjs": "1.1.0"},
+  "devDependencies": {"jslint": "0.1.8"},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs" : { "url" : "https://github.com/pconstr/rdb-parser/issues" },
+  "contributors": [
+    {
+      "name": "Carlos Guerreiro",
+      "email": "carlos@perceptiveconstructs.com",
+      "web": "http://perceptiveconstructs.com"
+    },
+    {
+      "name": "Carlos Guerreiro",
+      "email": "cguerreiro@igalia.com",
+      "web": "http://igalia.com"
+    }
+  ],
+  "scripts": {
+    "lint": "./node_modules/jslint/bin/jslint.js *.js",
+    "test": "node ./tests/parseFile.js"
+  }
+}
